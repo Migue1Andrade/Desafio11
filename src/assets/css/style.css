@@ -1,0 +1,253 @@
+body{
+	font-family: "Open Sans", serif;
+	margin: 0;
+}
+/* .. volta . atual*/
+/* linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent),
+	linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent),
+	linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent) */
+.background{
+	background-image: 
+	linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent),
+	linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent),
+	linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent) ,url('../img/batman.png');
+	width: 100%; 
+	height: 100vh; 
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	margin: 0;
+}
+
+.nav-bar{
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+}
+
+.side-bar {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+	margin-right: 25px; 
+	padding: 20px
+}
+
+.side-bar-mobile{
+	display: none;
+	position: fixed;
+	right: 10px;
+	top: 12px;
+	margin-right: 0; 
+	padding: 20px
+}
+
+.lupa{
+	gap: 20px;
+}
+
+.kenai{
+	margin-top: 40px;
+	margin-left: 60px;
+}
+
+.side-bar-text{
+	color: white;
+}
+
+.side-bar-text{
+	align-self: center;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.elements-container{
+	width: 80%;
+	height: 100vh;
+	padding-top: 9%;
+	margin-left: 11%;
+}
+
+.movie-class{
+	color: #FFA634;
+	background-color: #181818;
+	margin-bottom: 20px;
+	border-radius: 0px 4px 0px 4px;
+	border: none;
+}
+
+.content-title{
+	margin-bottom: 0;
+}
+
+.movie-title{
+	color: white;
+	font-size: 50px;
+}
+
+.content-text {
+	text-wrap: wrap;
+	max-width: 592px;
+	max-height: 150px;
+}
+
+.movie-discription{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.movie-button{
+	margin-top: 20px;
+	background-color: #FFA634;
+	color: black;
+	border-radius: 2px;
+	border: none;
+	width: 150px;
+	height: 35px;
+	margin-bottom: 4%;
+	margin-top: 0;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	column-gap: 0;
+	margin-right: 10px;
+	/* overflow-x: scroll; */
+}
+
+.grid-item{
+    height: auto;
+	margin: 0;
+    padding: 0px;
+	justify-self: center;
+	margin-bottom: -20%; 
+}
+
+.grid-item img {
+	width: 90%;
+	height: 100%;
+	object-fit: cover;
+	padding-right: 50px;
+}
+
+.stars-time{
+	margin-bottom: 17px;
+}
+
+
+@media (width <= 768px) {
+  .container{
+		display: block;
+		width: 100%;
+		height: 100vh;
+		margin-left: 53px;
+	}
+
+	.elements-container{
+		margin: 0;
+	}
+
+	.kenai{
+		margin-left: 53px;
+	}
+
+	.side-bar{
+		display: none;
+	}
+
+	.side-bar-mobile{
+		display: block !important;
+	}
+
+	.movie-discription{
+		color: white;
+		font-size: 16px;
+	}
+
+	.content-text {
+		text-wrap: wrap;
+		width: 312px;
+		height: 168px;
+	}
+
+	.movie-button{
+		width: 312px;
+		height: 42px;
+	}
+
+	.grid-container{
+		position: absolute;
+		overflow: hidden;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-snap-align: start;
+		scroll-behavior: smooth;
+		grid-template-columns: repeat(5, 1fr);
+		column-gap: 10px;
+	}
+
+	.grid-item{
+		width: 168px;
+		height: 256px;
+		margin: 0;
+		padding: 0px;
+		justify-self: center;
+		margin-bottom: -20%; 
+		
+	}
+	
+	.grid-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.background{
+		background-position: 90% 90%
+	}
+	
+}
+
+@media screen and (width <= 360px){
+	.movie-class{
+		width: 103px;
+		height: 24px;
+}
+
+	.stars-time{
+		width: 214px;
+		height: 20px;	
+}
+	.container{
+		margin-left: 22px;
+	}
+
+
+	.kenai{
+		margin-left: 20px;
+}
+	.movie-title{
+		width: 153px;
+		height: 54;
+	}
+
+	.movie-discription{
+		width: 312px;
+		height: 168px;
+	}
+	.background{
+		background-position: 70% 70%
+	}
+}

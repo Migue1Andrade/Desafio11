@@ -1,16 +1,16 @@
 body{
-    background-color: #121214;
-    width: auto; 
-    height: auto;
-    font-family: "Open Sans", serif;
-    width: 1920px;
-    height: 1080px;
-    margin: 0;
+	background-color: #121214;
+	width: auto; 
+	height: auto;
+	font-family: "Open Sans", serif;
+	width: 1920px;
+	height: 1080px;
+	margin: 0;
 }
 
 .kenai{
 	position: fixed;
-    margin-top: 40px;
+	margin-top: 40px;
 	margin-left: 60px;
 }
 
@@ -21,251 +21,251 @@ body{
 	align-items: center;
 }
 
-.side-bar {
+.side-bar{
 	position: fixed;
 	right: 20px;
 	top: 20px;
 	display: flex;
 	flex-direction: row;
 	gap: 2px; 
-	padding: 20px
+	padding: 20px;
 }
 
 .users-choice{
 	width: 1216px;
-    height: 948px;
+	height: 948px;
 	margin-left: 360px; 
 }
 
 .users-items{
-    width: 100%;
+	width: 100%;
 	height: 400px;
 	padding-top: 0;
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .div-text{
-    width: 817px;
-    height: 165px;
-    gap: 24px;
-    margin-left: 17%;
-    margin-top: 120px;
-    
+	width: 817px;
+	height: 165px;
+	gap: 24px;
+	margin-left: 17%;
+	margin-top: 120px;
 }
 
 .text-style{
-    color: white;
-    margin: 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 64px;
+	color: white;
+	margin: 0;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 64px;
 }
 
 .under-text-style{
-    color: white;
-    margin: 0; 
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 40px;
+	color: white;
+	margin: 0; 
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 40px;
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1em;
-    margin-bottom: 0;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 1em;
+	margin-bottom: 0;
 }
 
 .grid-item{
-    margin-top: 190px;
-    padding: 0px;
+	margin-top: 190px;
+	padding: 0px;
 	justify-self: center;
 	align-self: center;
 }
 
-.grid-item img {
+.grid-item img{
 	width: 100%;
 	height: 245.5px;
 	object-fit: cover;
 }
 
 .users-nick{
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-right: 4px !important;
-    font-size: 30px;
+	color: white;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-right: 4px !important;
+	font-size: 30px;
 }
 
 .add-users-button{
-    background-color: #181818;
-    color: white;
-    width: 240px;
-    height: 64px;
-    font-size: 20px;
-    margin-left: 40%;
-    margin-top: 17%;
-    border-radius: 2px;
-    border: none;
-    line-height: 27.24px;
+	background-color: #181818;
+	color: white;
+	width: 240px;
+	height: 64px;
+	font-size: 20px;
+	margin-left: 40%;
+	margin-top: 17%;
+	border-radius: 2px;
+	border: none;
+	line-height: 27.24px;
 }
 
 .style-link{
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 @media(width <= 768px){
-    body{
-        width: 768px;
-        height: 863px;
-    }
-    
-    .side-bar{
-        display: none;
-    }
+	body{
+		width: 768px;
+		height: 863px;
+	}
 
-    .kenai{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-    }
+	.side-bar{
+		display: none;
+	}
 
-    .users-choice{
-        margin-left: 0;
-    }
+	.kenai{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-left: 0;
+	}
 
-    .div-text{
-        width: 817px;
-        height: auto;
-        gap: 24px;
-        margin-left: 17%;
-        margin-top: 25%;
-    }
-    
-    .text-style{
-        color: white;
-        margin: 0;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 30px;
-    }
-    
-    .under-text-style{
-        color: white;
-        margin: 0; 
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 22px;
-    }
+	.users-choice{
+		margin-left: 0;
+	}
 
-    .grid-container{
-        position: absolute;
-        width: auto;
-        height: auto;
-        margin-left: 32%;
-        grid-gap: 5em;
-    }
+	.div-text{
+		width: 817px;
+		height: auto;
+		gap: 24px;
+		margin-left: 17%;
+		margin-top: 25%;
+	}
 
-    .grid-item{
-        width: auto;
-        margin-top: 80px;
-    }
+	.text-style{
+		color: white;
+		margin: 0;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		font-size: 30px;
+	}
 
-    .grid-item img{
-        width: 200px;
-        height: 200px;
-    }
+	.under-text-style{
+		color: white;
+		margin: 0; 
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		font-size: 22px;
+	}
 
-    .users-nick{
-        font-size: 20px;
-    }
+	.grid-container{
+		position: absolute;
+		width: auto;
+		height: auto;
+		margin-left: 32%;
+		grid-gap: 5em;
+	}
 
-    .add-users-button{
-        margin-top: 35%;
-        margin-left: 36%;
-        width: 380px;
-        height: 58px;
-    }
+	.grid-item{
+		width: auto;
+		margin-top: 80px;
+	}
+
+	.grid-item img{
+		width: 200px;
+		height: 200px;
+	}
+
+	.users-nick{
+		font-size: 20px;
+	}
+
+	.add-users-button{
+		margin-top: 35%;
+		margin-left: 36%;
+		width: 380px;
+		height: 58px;
+	}
 }
 
 @media screen and (width <= 360px){
-    body{
-        width: 100%;
-        max-width: 360px;
-        height: 100vh;
-        max-height: 863px;
-    }
-    
-    .users-choice{
-        margin-left: 0;
-    }
+	body{
+		width: 100%;
+		max-width: 360px;
+		height: 100vh;
+		max-height: 863px;
+	}
 
-    .div-text{
-        width: 817px;
-        height: auto;
-        gap: 24px;
-        margin-left: 17%;
-        margin-top: 10%;
-    }
-    
-    .text-style{
-        color: white;
-        margin: 0;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 60px;
-    }
+	.users-choice{
+		margin-left: 0;
+	}
 
-    .under-text-style{
-        color: white;
-        margin: 0; 
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 50px;
-    }
+	.div-text{
+		width: 817px;
+		height: auto;
+		gap: 24px;
+		margin-left: 17%;
+		margin-top: 10%;
+	}
 
-    .grid-container{
-        position: absolute;
-        width: auto;
-        height: auto;
-        margin-left: 124%;
-        margin-top: 25%;
-        grid-gap: 5em;
-        grid-template-columns: 1fr
-    }
+	.text-style{
+		color: white;
+		margin: 0;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		font-size: 60px;
+	}
 
-    .grid-item{
-        width: auto;
-        margin-top: 80px;
-    }
+	.under-text-style{
+		color: white;
+		margin: 0; 
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		font-size: 50px;
+	}
 
-    .grid-item img{
-        width: 350px;
-        height: 350px;
-    }
+	.grid-container{
+		position: absolute;
+		width: auto;
+		height: auto;
+		margin-left: 124%;
+		margin-top: 25%;
+		grid-gap: 5em;
+		grid-template-columns: 1fr
+	}
 
-    .users-nick{
-        font-size: 35px;
-    }
+	.grid-item{
+		width: auto;
+		margin-top: 80px;
+	}
 
-    .add-users-button{
-        margin-top: 160%;
-        margin-left: 25%;
-        width: 50%;
-        height: 80px;
-    }
+	.grid-item img{
+		width: 350px;
+		height: 350px;
+	}
 
-    .kenai{
-        margin-top: 5%;
-        height: 50px;
-    }
+	.users-nick{
+		font-size: 35px;
+	}
+
+	.add-users-button{
+		margin-top: 160%;
+		margin-left: 25%;
+		width: 50%;
+		height: 80px;
+	}
+
+	.kenai{
+		margin-top: 5%;
+		height: 50px;
+	}
+}

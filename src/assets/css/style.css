@@ -39,8 +39,7 @@ body{
 	position: fixed;
 	right: 10px;
 	top: 12px;
-	margin-right: 0; 
-	padding: 20px
+	padding: 20px;
 }
 
 .lupa{
@@ -82,16 +81,12 @@ body{
 	border: none;
 }
 
-.content-title{
-	margin-bottom: 0;
-}
-
 .movie-title{
 	color: white;
 	font-size: 50px;
 }
 
-.content-text{
+.content-text {
 	text-wrap: wrap;
 	max-width: 592px;
 	max-height: 150px;
@@ -100,8 +95,6 @@ body{
 .movie-discription{
 	color: white;
 	font-size: 20px;
-	margin-bottom: 0;
-	margin-top: 0;
 }
 
 .movie-button{
@@ -113,7 +106,6 @@ body{
 	width: 150px;
 	height: 35px;
 	margin-bottom: 4%;
-	margin-top: 0;
 }
 
 .grid-container{
@@ -126,9 +118,7 @@ body{
 }
 
 .grid-item{
-    height: auto;
-	margin: 0;
-    padding: 0px;
+	height: auto;
 	justify-self: center;
 	margin-bottom: -20%; 
 }
@@ -202,6 +192,7 @@ body{
 		padding: 0px;
 		justify-self: center;
 		margin-bottom: -20%; 
+		
 	}
 
 	.grid-item img{
@@ -211,7 +202,7 @@ body{
 	}
 
 	.background{
-		background-position: 90% 90%;
+		background-position: 90% 90%
 	}
 }
 

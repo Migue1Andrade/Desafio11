@@ -1,8 +1,11 @@
 body{
-    background-color: #181818;
+    background-color: #121214;
     width: auto; 
     height: auto;
     font-family: "Open Sans", serif;
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
 }
 
 .kenai{
@@ -29,40 +32,55 @@ body{
 }
 
 .users-choice{
-	width: 80%;
-	height: 100vh;
-	margin-left: 18%;
+	width: 1216px;
+    height: 948px;
+	margin-left: 360px; 
 }
 
 .users-items{
-    width: 80%;
+    width: 100%;
 	height: 400px;
 	padding-top: 0;
     display: flex;
     justify-content: center;
 }
 
-.users-title{
-    color: white;
-    font-size: 80px;
+.div-text{
+    width: 817px;
+    height: 165px;
+    gap: 24px;
+    margin-left: 17%;
+    margin-top: 120px;
+    
 }
 
-.users-ask{
+.text-style{
     color: white;
-    font-size: 40px ;
-    padding-left: 27%;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.under-text-style{
+    color: white;
+    margin: 0; 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 1em;
-    margin-right: 20%;
     margin-bottom: 0;
 }
 
 .grid-item{
-    margin: 0;
+    margin-top: 190px;
     padding: 0px;
 	justify-self: center;
 	align-self: center;
@@ -84,15 +102,16 @@ body{
 }
 
 .add-users-button{
-    background-color: #121214;
+    background-color: #181818;
     color: white;
-    width: 200px;
-    height: 40px;
-    margin-left: 34%;
-    margin-right: 20%;
-    margin-top: 5%;
+    width: 240px;
+    height: 64px;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-top: 17%;
     border-radius: 2px;
     border: none;
+    line-height: 27.24px;
 }
 
 .style-link{
@@ -101,6 +120,11 @@ body{
 }
 
 @media(width <= 768px){
+    body{
+        width: 768px;
+        height: 863px;
+    }
+    
     .side-bar{
         display: none;
     }
@@ -112,38 +136,52 @@ body{
         margin-left: 0;
     }
 
-    .users-title{
-        font-size: 47px;
+    .users-choice{
+        margin-left: 0;
     }
 
-    .users-ask{
-        font-size: 30px;
-        padding: 20%;
-        font-size: 18px;
-        
+    .div-text{
+        width: 817px;
+        height: auto;
+        gap: 24px;
+        margin-left: 17%;
+        margin-top: 25%;
     }
     
-    .users-title{
-        margin-bottom: 0;
-        margin-top: 60%;
+    .text-style{
+        color: white;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
         font-size: 30px;
-        padding-left: 5px;
+    }
+    
+    .under-text-style{
+        color: white;
+        margin: 0; 
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 22px;
     }
 
     .grid-container{
         position: absolute;
         width: auto;
-        margin-left: -35px;
+        height: auto;
+        margin-left: 32%;
         grid-gap: 5em;
     }
 
     .grid-item{
         width: auto;
+        margin-top: 80px;
     }
 
     .grid-item img{
-        width: auto;
-        height: 140px;
+        width: 200px;
+        height: 200px;
     }
 
     .users-nick{
@@ -151,51 +189,83 @@ body{
     }
 
     .add-users-button{
-        margin-top: 39%;
-        margin-right: 14%;
-        margin-left: 24%;
+        margin-top: 35%;
+        margin-left: 36%;
+        width: 380px;
+        height: 58px;
     }
 }
 
-@media(width <= 375px){
+@media screen and (width <= 360px){
+    body{
+        width: 100%;
+        max-width: 360px;
+        height: 100vh;
+        max-height: 863px;
+    }
+    
+    .users-choice{
+        margin-left: 0;
+    }
+
+    .div-text{
+        width: 817px;
+        height: auto;
+        gap: 24px;
+        margin-left: 17%;
+        margin-top: 10%;
+    }
+    
+    .text-style{
+        color: white;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 60px;
+    }
+
+    .under-text-style{
+        color: white;
+        margin: 0; 
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
     .grid-container{
-        display: grid;
         position: absolute;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-        grid-gap: 2em;
-        margin-top: -190px;
-        
+        width: auto;
+        height: auto;
+        margin-left: 124%;
+        margin-top: 25%;
+        grid-gap: 5em;
+        grid-template-columns: 1fr
     }
 
     .grid-item{
         width: auto;
-        margin-left: 145%;
+        margin-top: 80px;
     }
 
     .grid-item img{
-        width: auto;
-        height: 140px;
-    }
-    
-    .users-choice{
-        width: 100%;
-        height: 100vh;
-        margin-left: 30%;
+        width: 350px;
+        height: 350px;
     }
 
-    .users-title{
-        margin-top: 80px;
-        margin-right: 20px;
+    .users-nick{
+        font-size: 35px;
     }
 
     .add-users-button{
-        margin-top: 150%;
-        margin-left: -12%;
-        width: 100%;
+        margin-top: 160%;
+        margin-left: 25%;
+        width: 50%;
+        height: 80px;
     }
 
     .kenai{
-        margin-top: 0;
+        margin-top: 5%;
+        height: 50px;
     }
-}
